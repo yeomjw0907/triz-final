@@ -1,3 +1,33 @@
 .example {
-  background-color: lightblue;
+  background-color: whitesmoke;
+  display: flex;
+  .left {
+    flex: 0.5;
+    position: relative;
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .right {
+    flex: 0.5;
+    overflow: hidden;
+    position: relative;
+
+    .imgContainer {
+      width: 700px;
+      height: 600px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+      img {
+        width: 90%;
+      }
+    }
+  }
 }

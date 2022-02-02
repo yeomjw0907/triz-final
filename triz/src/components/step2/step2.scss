@@ -1,3 +1,16 @@
 .step2 {
   background-color: beige;
+  display: flex;
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+  }
+  .right {
+    flex: 0.5;
+    position: relative;
+    .imgContainer {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

@@ -1,3 +1,28 @@
 .step1 {
-  background-color: pink;
+  background-color: #6486ff;
+  display: flex;
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+  }
+  .right {
+    flex: 0.5;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    button {
+      color: antiquewhite;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      color: inherit;
+      justify-content: space-around;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 15px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 }
